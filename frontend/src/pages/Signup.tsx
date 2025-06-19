@@ -9,7 +9,6 @@ import {
   Anchor,
   Stack,
   ThemeIcon,
-  Center,
 } from "@mantine/core";
 import { IconUserPlus, IconMail, IconKey, IconUser } from "@tabler/icons-react";
 import { Link, useNavigate } from "react-router-dom";
