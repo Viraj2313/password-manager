@@ -41,6 +41,7 @@ jobs:
 
       - name: Add VM to known hosts
         run: |
+          mkdir -p ~/.ssh
           ssh-keyscan -H ${{secrets.VM_IP}} >> ~/./ssh/known_hosts
 
       - name: create .env file
