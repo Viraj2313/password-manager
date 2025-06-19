@@ -12,4 +12,4 @@ RUN dotnet publish "PasswordManagerApi.csproj" -c Release -o /app/publish
 FROM --platform=$TARGETPLATFORM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT [ "dotnet", "PasswordManagerApi.dll" ]
+ENTRYPOINT [ "dotnet", "PasswordManagerApi.dll", "--migrate"]
