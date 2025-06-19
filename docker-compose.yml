@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  passwordmanagerapi:
+    image: viraj231/passwordmanagerapi:latest
+    container_name: passwordmanagerapi_container
+    ports:
+      - "80:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=${LINUX_DB_CONN_STRING}
+      - Jwt__Key=${JWT_SECRET_KEY}
+      - Jwt__Issuer=https://passwordmanager.virajdeveloper.online
+      - Jwt__Audience=https://passwordmanager.virajdeveloper.online
+      - ASPNETCORE_URLS=http://+:80
+    networks:
+      - passwordmanager-network
+    restart: always
+
+  frontend:
+    image: viraj231/passwordmanagerfrontend:latest
+    container_name: passwordmanagerfrontend_container
+    ports:
+      - "3000:80"
+    networks:
+      - passwordmanager-network
+    restart: always
+
+networks:
+  passwordmanager-network:
+    driver: bridge
