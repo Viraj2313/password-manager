@@ -46,7 +46,7 @@ const Signup = () => {
     navigate("/");
   }
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-800 dark:to-gray-900 flex items-center justify-center py-8 px-4 overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-800 dark:to-gray-900 flex items-center justify-center pt-8 px-4 overflow-x-hidden">
       <Container size="sm" className="w-full max-w-md">
         <div className="text-center mb-6 sm:mb-8">
           <div className="relative mb-4 sm:mb-6">
@@ -81,7 +81,7 @@ const Signup = () => {
         <Paper
           shadow="xl"
           radius="xl"
-          p="lg"
+          p="xl"
           className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:shadow-2xl transition-all duration-500"
         >
           <Stack gap="md">

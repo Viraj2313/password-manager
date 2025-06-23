@@ -1,7 +1,7 @@
 import { Box, Text } from "@mantine/core";
 const Footer = () => {
   return (
-    <Box className="text-center mt-20 pt-12 border-t border-gray-200 dark:border-gray-700 mb-12">
+    <Box className="text-center mt-12 pt-12 border-t border-gray-200 dark:border-gray-700 mb-12">
       <Text className="text-gray-500 dark:text-gray-400">
         © {new Date().getFullYear()} Viraj Mahajan. Built with security and
         privacy in mind.{" "}

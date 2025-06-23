@@ -220,7 +220,7 @@ function Home() {
     )
   ) : (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-800 dark:to-gray-900 overflow-x-hidden">
-      <Container size="lg" className="pt-8 sm:pt-20 pb-8 sm:pb-12 px-4">
+      <Container size="lg" className="pt-8 sm:pt-20 px-4">
         <section className="text-center mb-12 sm:mb-20">
           <div className="relative mb-6 sm:mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full blur-2xl sm:blur-3xl opacity-20 scale-125 sm:scale-150 animate-pulse"></div>
@@ -289,8 +289,7 @@ function Home() {
             {
               icon: IconCloud,
               title: "Cross-Platform Sync",
-              description:
-                "Real-time synchronization across devices with offline support and conflict resolution.",
+              description: "Real-time synchronization across devices.",
               color: "green",
               gradient: { from: "green", to: "teal" },
             },

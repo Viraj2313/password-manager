@@ -1,5 +1,5 @@
-/bin/
-/obj/
+bin/
+obj/
 key/
 appsettings.json
 appsettings.Development.json

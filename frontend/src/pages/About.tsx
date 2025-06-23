@@ -13,7 +13,6 @@ import {
 } from "@mantine/core";
 import {
   IconLock,
-  IconCloudUpload,
   IconShieldLock,
   IconCode,
   IconBrandGithub,
@@ -23,6 +22,7 @@ import {
   IconApi,
 } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function About() {
   const features = [
@@ -35,18 +35,9 @@ function About() {
       gradient: { from: "blue", to: "cyan" },
     },
     {
-      icon: IconCloudUpload,
-      title: "Real-time Synchronization",
-      description:
-        "Seamless data sync across devices with conflict resolution and offline support.",
-      color: "green",
-      gradient: { from: "green", to: "teal" },
-    },
-    {
       icon: IconShieldLock,
       title: "JWT Authentication",
-      description:
-        "Stateless authentication with secure token management and automatic refresh.",
+      description: "Authentication with JWT tokens stored securely in cookies.",
       color: "orange",
       gradient: { from: "orange", to: "red" },
     },
@@ -122,7 +113,7 @@ function About() {
         </div>
 
         <SimpleGrid
-          cols={{ base: 1, sm: 2, lg: 4 }}
+          cols={{ base: 1, sm: 2, lg: 3 }}
           spacing="lg"
           mb={12}
           className="px-4 sm:px-0 sm:mb-16"
@@ -368,7 +359,7 @@ function About() {
                 rightSection={<IconArrowRight size={14} />}
                 variant="gradient"
                 gradient={{ from: "blue", to: "purple", deg: 45 }}
-                className="transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
+                className="transform hover:scale-105 transition-all duration-300 w-full sm:w-auto mt-4"
                 size="md"
               >
                 Try the Application
@@ -377,6 +368,7 @@ function About() {
           </div>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 }
