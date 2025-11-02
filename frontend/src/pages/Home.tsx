@@ -141,11 +141,10 @@ function Home() {
                     Your Secure Vault
                   </Title>
                   <Group gap="xs" mt={2}>
-                    <Badge variant="light" color="blue" size="sm">
+                    <Badge variant="light" color="blue" size="md">
                       {passwords.length} passwords
                     </Badge>
-                    <Badge variant="light" color="green" size="sm">
-                      <IconShield size={12} />
+                    <Badge variant="light" color="green" size="md">
                       Encrypted
                     </Badge>
                   </Group>
